@@ -12,16 +12,36 @@
 <body>
     <main class="main">
 
-        <p class="id"><i class="fa-solid fa-music"></i>Green</p>
+        <div class="conteiner-1">
 
-        <div class="left-side">
-            <img src="image/img-music.jpg" alt="">
+            <p class="id"><i class="fa-solid fa-music"></i>Green</p>
+
+            <div class="left-side">
+                <img src="image/img-music.jpg" alt="">
             
-            <p id="volume-show">90</p>
+                <p id="volume-show">90</p>
+                <i class="fa-sharp fa-solid fa-volume" aria-hidden="true" class="volume-icon" onclick="mute_sound()"></i>
+                <input type="range" min="0" max="100" value="90" onchange="volume_change()" class="input-range">
+            </div>
 
-            <i class="fa-sharp fa-solid fa-volume" aria-hidden="true" class="volume-icon" onclick="mute_sound()"></i>
+        </div>
 
-            <input type="range" min="0" max="100" value="90" onchange="volume_change()" class="input-range">
+
+        <div class="conteiner-2">
+            
+            <div class="">
+                <h1>Titulo</h1>
+                <h2>Banda</h2>
+            </div>
+
+            <div>
+                <button class="player-btn backward" onclick="previous_song"><i class="fa-solid fa-backward-fast"></i></button>
+
+                <button class="play-btn play" onclick="justplay"><i class="fa-solid fa-play"></i></button>
+
+                <button class="player-btn forward" onclick="next_song"><i class="fa-solid fa-forward-fast"></i></button>
+            </div>
+
         </div>
 
 
