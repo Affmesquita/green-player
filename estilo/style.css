@@ -7,7 +7,14 @@
     list-style-type: none;
 }
 
-
+@font-face {
+    font-family: roboto;
+    src: url(/fontes/Roboto-Light.ttf);
+}
+@font-face {
+    font-family: roboto-black-italic;
+    src: url(/fontes/Roboto-BlackItalic.ttf);
+}
 
 body {
     width: 100%;
@@ -19,6 +26,11 @@ body {
 
     font-family: Arial, Helvetica, sans-serif;
 
+    background-color: rgb(50, 50, 73);
+    background-image: url(/image/fundo-03.jpg);
+    background-position: center;
+
+    color: white;
 }
 
 
@@ -28,41 +40,60 @@ main {
     
     margin: 50px;
 
-    background-color: #017a68e3;
+    background-color: #262626e3;
 
     border-radius: 20px;
+    border: 2px solid #d9d9d962;
 
     padding: 20px;
 
-    box-shadow: 2px 2px 3px black;
+    box-shadow: 0px 3px 3px black;;
 
     display: flex;
     flex-direction: row;
     justify-content: space-around;
 }
 
+.id {
+    color: #025951;
+
+    font-size: 2rem;
+    font-family: roboto-black-italic;
+    text-shadow: 2px 2px 2px black;
+}
+
 .conteiner-1 {
+    width: 500px;
+    height: 400px;
+
     margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .left-side {
-
+    margin: auto;
 }
 .left-side img {
     width: 350px;
 
     border: 3px 0px 20px solid white;
     border-radius: 20px;
+
+    box-shadow: 3px 3px 3px black;
 }
+.input-range {
+    width: 100%;
 
-
+    color: white;
+}
 
 
 .conteiner-2 {
     width: 400px;
     height: 200px;
-
-    background-color: aqua;
 
     margin: auto;
 
@@ -71,6 +102,16 @@ main {
     align-items: center;
     justify-content: space-between;
 
+    font-family: arial;
+    text-shadow: 1px 4px 1px black;
+
+}
+.desc-sound {
+    text-align: center;
+
+    border-bottom: 1px solid rgba(255, 255, 255, 0.24);
+
+    padding-bottom: 35px;
 }
 .play-btn{
     width: 70px;
@@ -79,8 +120,9 @@ main {
     border-radius: 80px;
     border: none;
 
-    background-color: #016b5be3;
-    
+    background-color: #404040;
+
+    box-shadow: 1px 1px 1px black;
     
 }
 .player-btn {
@@ -90,7 +132,15 @@ main {
     border-radius: 80px;
     border: none;
     
-    background-color: #016b5be3;
-    
+    background-color: #404040;
+
+    box-shadow: 1px 1px 1px black;
 
 }
+.play-btn:hover ,.player-btn:hover {
+    background-color: #737373;
+
+    box-shadow: 2px 2px 2px black;
+}
+
+

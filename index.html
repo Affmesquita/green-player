@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilo/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="estilo/input-range.css">
     <script src="javascript/js.js" defer></script>
     <title>Green</title>
 </head>
@@ -17,33 +18,40 @@
             <p class="id"><i class="fa-solid fa-music"></i>Green</p>
 
             <div class="left-side">
-                <img src="image/img-music.jpg" alt="">
+
+                <img src="image/avatar-sound.jpg" alt="">
             
                 <p id="volume-show">90</p>
+
                 <i class="fa-sharp fa-solid fa-volume" aria-hidden="true" class="volume-icon" onclick="mute_sound()"></i>
+
                 <input type="range" min="0" max="100" value="90" onchange="volume_change()" class="input-range">
+
             </div>
 
         </div>
 
-
         <div class="conteiner-2">
             
-            <div class="">
-                <h1>Titulo</h1>
-                <h2>Banda</h2>
+            <div class="desc-sound">
+
+                <h1>Venho de longe</h1>
+
+                <h2>Ludovico</h2>
+
             </div>
 
             <div>
+
                 <button class="player-btn backward" onclick="previous_song"><i class="fa-solid fa-backward-fast"></i></button>
 
                 <button class="play-btn play" onclick="justplay"><i class="fa-solid fa-play"></i></button>
 
                 <button class="player-btn forward" onclick="next_song"><i class="fa-solid fa-forward-fast"></i></button>
+
             </div>
 
         </div>
-
 
     </main>
 </body>
